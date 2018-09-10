@@ -1,7 +1,8 @@
 defmodule Fluid.MixProject do
   use Mix.Project
 
-  @version "0.0.1-dev"
+  @version "0.0.2-dev"
+
   def project() do
     [
       app: :fluid,
@@ -29,7 +30,7 @@ defmodule Fluid.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps() do
     [
-      {:ecto, "~> 2.2.0", potional: true},
+      {:ecto, "~> 2.2.0", optional: true},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:timex, "~> 3.0", only: :test}
     ]
